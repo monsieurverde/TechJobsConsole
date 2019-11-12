@@ -129,7 +129,7 @@ namespace TechJobsConsole
                         Console.WriteLine(key + (": " + job[key]));
                     }
 
-                    Console.WriteLine("***");
+                    Console.WriteLine("***\n");
                 }
 
             }

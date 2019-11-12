@@ -56,7 +56,7 @@ namespace TechJobsConsole
 
                     // What is their search term?
                     Console.WriteLine("\nSearch term: ");
-                    string searchTerm = Console.ReadLine();
+                    string searchTerm = Console.ReadLine().ToLower();
 
                     List<Dictionary<string, string>> searchResults;
 
@@ -67,7 +67,7 @@ namespace TechJobsConsole
                     }
                     else
                     {
-                        searchResults = JobData.FindByColumnAndValue(columnChoice, searchTerm);
+                        searchResults = JobData.FindByColumnAndValue(columnChoice, searchTerm.ToLower());
                         PrintJobs(searchResults);
                     }
                 }
